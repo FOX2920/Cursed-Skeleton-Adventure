@@ -72,4 +72,4 @@ Manages the overall game flow including hero creation, event triggering, enemy e
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
-Enjoy your adventure as the cursed skeleton!
+# Enjoy your adventure as the cursed skeleton!
