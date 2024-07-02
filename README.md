@@ -1,4 +1,3 @@
-
 # Cursed Skeleton Adventure
 
 ## Overview
@@ -30,44 +29,45 @@ A base class for all characters in the game with attributes like name, health, a
 
 ### Hero
 
-Inherits from Character, representing the player's character with additional inventory management and weapon equipping functionalities.
+Inherits from Character, representing the player's character with additional inventory management and weapon equipping capabilities.
 
 ### Enemy
 
-Inherits from Character, representing various enemies with specific health and damage attributes.
+Inherits from Character, representing various enemies with their own attack damage.
 
 ### Event
 
-Represents random events that the player may encounter during exploration.
+Defines random events with a name and description to enrich the gameplay experience.
 
 ### Game
 
-Manages the game flow, including hero creation, enemy encounters, random events, and user interactions.
+Manages the overall game flow including hero creation, event triggering, enemy encounters, and main menu navigation.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.x
+- Compatible terminal or command prompt
+
+### Running the Game
+
+1. Clone the repository or download the game files.
+2. Open a terminal or command prompt.
+3. Navigate to the directory containing the game files.
+4. Run the game using the command:
+   ```sh
+   python game.py
+   ```
 
 ## Gameplay
 
-1. **Select Your Weapon**: Choose from available weapons to equip your hero.
-2. **Main Menu**:
-    - **Explore**: Trigger random events and possibly encounter enemies.
-    - **View Inventory**: Check your collected items and weapons.
-    - **Quit**: Exit the game.
+1. **Weapon Selection**: At the start of the game, select a weapon to equip your hero.
+2. **Main Menu**: Navigate through the main menu to explore, view inventory, or quit the game.
+3. **Exploration**: Encounter random events and enemies as you explore the dungeon.
+4. **Combat**: Engage in battles with enemies, utilizing your equipped weapon.
+5. **Inventory**: Check and manage your inventory of collected items and weapons.
 
-## Installation
+## Contributing
 
-To play the game, simply run the `main.py` script.
-
-## Requirements
-
-- Python 3.x
-
-## How to Run
-
-1. Ensure you have Python 3 installed.
-2. Download the game files.
-3. Run the game by executing:
-
-```sh
-python main.py
-```
-
-Enjoy your adventure as the cursed skeleton!
+Contributions are welcome! Feel free to open issues or submit pull requests.
