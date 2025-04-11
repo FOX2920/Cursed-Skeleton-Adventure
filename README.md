@@ -1,75 +1,70 @@
-# Cursed Skeleton Adventure
+# Dungeon Crawler: A Text-Based Battle Adventure
 
-## Overview
+A dungeon crawler RPG with turn-based combat, inventory management, and character progression, built entirely in Python.
 
-**Cursed Skeleton Adventure** is a text-based adventure game where you play as a cursed skeleton striving to reach the surface from the depths of a forgotten castle dungeon. Along the journey, you'll encounter various events, face enemies, collect weapons, and experience an engaging story that offers multiple endings.
+## Game Overview
 
-## Features
+In Dungeon Crawler, you awaken in a dark dungeon with no memory of how you got there. Armed with only your wits, you must fight your way through the dungeon, defeat enemies, and uncover the secrets within. The game features:
 
-- **Hero and Enemy Health Bars**: Visual representation of health with green bars for heroes and red bars for enemies.
-- **Weapon System**: Equip different weapons like Iron Sword, Short Bow, or use your Fists.
-- **Random Events**: Encounter diverse and unpredictable events that add depth to the gameplay.
-- **Enemy Encounters**: Face off against various enemies, each with unique health and attack stats.
-- **Inventory Management**: Keep track of your collected items and weapons.
-- **Game Over Scenarios**: Multiple ways to end the game, either by quitting or being defeated.
+- **Turn-based combat** with a variety of enemies and bosses
+- **Character progression** with level-ups and ability unlocks
+- **Inventory management** with weapons, armor, and consumable items
+- **Shop system** to purchase new equipment and items
+- **Random events** that can help or hinder your adventure
+- **Multiple zones** with increasing difficulty
+- **Boss battles** with unique mechanics and rewards
+- **Status effects** like poison, burn, and freeze
+- **Special abilities** that unlock as you level up
 
-## Classes
+## Game Structure
 
-### Weapon
+The game is built using object-oriented programming principles, with the following components:
 
-Represents different types of weapons with specific attributes like name, type, damage range, and value.
+### Core Classes
 
-### HealthBar
+- **Game**: Manages the game state, combat, exploration, and menus
+- **Character**: Base class for all characters in the game
+  - **Hero**: Player character with inventory, equipment, and abilities
+  - **Enemy**: Standard enemies with scaling difficulty
+  - **Boss**: Powerful enemies with phases and special abilities
+- **Weapon**: Various weapons with different damage ranges and special effects
+- **Item**: Consumables, armor, and other items that can be used or equipped
+- **Shop**: Allows the player to purchase items and equipment
+- **Event**: Random encounters that can provide loot or special effects
+- **HealthBar**: Visual representation of character health with status indicators
 
-Displays the health of heroes and enemies visually.
+### Game Zones
 
-### Character
+The game features 5 zones with increasing difficulty:
 
-A base class for all characters in the game with attributes like name, health, and weapon.
+1. **Dungeon Entrance**: The starting area with basic enemies
+2. **Forgotten Catacombs**: Ancient burial chambers with undead enemies
+3. **Demon's Lair**: A fiery cavern with demonic foes
+4. **Ancient Ruins**: Crumbling ruins with powerful guardians
+5. **Master's Chamber**: The final area where the dungeon master awaits
 
-### Hero
+Each zone has its own set of enemies and a powerful boss that must be defeated to progress.
 
-Inherits from Character, representing the player's character with additional inventory management and weapon equipping capabilities.
+## How to Play
 
-### Enemy
+1. Run `main.py` to start the game
+2. Choose your starting weapon
+3. Navigate through the main menu to explore, manage your inventory, visit the shop, or rest
+4. Battle enemies, collect loot, and level up your character
+5. Defeat the boss of each zone to progress to the next area
+6. Defeat the final boss to complete the game
 
-Inherits from Character, representing various enemies with their own attack damage.
+## Controls
 
-### Event
+The game uses simple text-based controls:
+- Enter the number or letter corresponding to your choice
+- Follow the prompts to navigate menus, battle enemies, and interact with the game world
 
-Defines random events with a name and description to enrich the gameplay experience.
+## Requirements
 
-### Game
+- Python 3.6 or higher
+- No external libraries required
 
-Manages the overall game flow including hero creation, event triggering, enemy encounters, and main menu navigation.
+## Credits
 
-## Getting Started
-
-### Prerequisites
-
-- Python 3.x
-- Compatible terminal or command prompt
-
-### Running the Game
-
-1. Clone the repository or download the game files.
-2. Open a terminal or command prompt.
-3. Navigate to the directory containing the game files.
-4. Run the game using the command:
-   ```sh
-   python game.py
-   ```
-
-## Gameplay
-
-1. **Weapon Selection**: At the start of the game, select a weapon to equip your hero.
-2. **Main Menu**: Navigate through the main menu to explore, view inventory, or quit the game.
-3. **Exploration**: Encounter random events and enemies as you explore the dungeon.
-4. **Combat**: Engage in battles with enemies, utilizing your equipped weapon.
-5. **Inventory**: Check and manage your inventory of collected items and weapons.
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-# Enjoy your adventure as the cursed skeleton!
+This game was created as a demonstration of object-oriented programming in Python, featuring class inheritance, encapsulation, and polymorphism.
